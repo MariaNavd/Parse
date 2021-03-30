@@ -1,7 +1,6 @@
-// Анализ строк в текстовом файле
 #include "Functions.h"
 
-// Поиск строк, удовлетворяющих входным данным
+// РџРѕРёСЃРє СЃС‚СЂРѕРє, СѓРґРѕРІР»РµС‚РІРѕСЂСЏСЋС‰РёС… РІС…РѕРґРЅС‹Рј РґР°РЅРЅС‹Рј
 bool filter_search(std::string curr_str, std::vector<std::string> filters, bool filters_contain) {
 	std::vector<bool> ex(filters.size(), false);
 
@@ -31,12 +30,12 @@ bool filter_search(std::string curr_str, std::vector<std::string> filters, bool 
 	return true;
 }
 
-// Запись нужных строк в выходной файл Result.log
+// Р—Р°РїРёСЃСЊ РЅСѓР¶РЅС‹С… СЃС‚СЂРѕРє РІ РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р» Result.log
 void select_strings(std::vector<std::string> filters, bool filters_contain) {
 	std::string curr_str;
 	std::fstream fin;
 
-	fin.open("Пример лога для парсинга.log", std::ios::in);
+	fin.open("РџСЂРёРјРµСЂ Р»РѕРіР° РґР»СЏ РїР°СЂСЃРёРЅРіР°.log", std::ios::in);
 	if (fin.is_open()) {
 		std::fstream fout;
 		fout.open("Result.log", std::ios::out);
@@ -49,8 +48,7 @@ void select_strings(std::vector<std::string> filters, bool filters_contain) {
 	fin.close();
 }
 
-// Дополнительная функция, конвертация String^ в std::string
-// необходима для чтения данных из формы
+// РљРѕРЅРІРµСЂС‚Р°С†РёСЏ String^ РІ std::string
 std::string convert_String_to_string(String^ s) {
     std::string os;
     using namespace Runtime::InteropServices;
