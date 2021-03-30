@@ -1,10 +1,9 @@
-// Функции формы
+// Р¤СѓРЅРєС†РёРё С„РѕСЂРјС‹
 #include "MyForm.h"
 #include "Functions.h"
 
-std::vector<std::string> filt; //Массив фильтров
+std::vector<std::string> filt; //РњР°СЃСЃРёРІ С„РёР»СЊС‚СЂРѕРІ
 
-// Точка входа в приложение
 [STAThread]
 void main(array<String^>^ arg) {
     Application::EnableVisualStyles();
@@ -14,7 +13,7 @@ void main(array<String^>^ arg) {
     Application::Run(% form);
 }
 
-// Добавление фильтра через текстовое поле в форме
+// Р”РѕР±Р°РІР»РµРЅРёРµ С„РёР»СЊС‚СЂР° С‡РµСЂРµР· С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ РІ С„РѕСЂРјРµ
 System::Void ParseLog::MyForm::addFilter_Click(System::Object^ sender, System::EventArgs^ e)
 {
     String^ curr_filt = filters->Text->ToString();
@@ -25,7 +24,7 @@ System::Void ParseLog::MyForm::addFilter_Click(System::Object^ sender, System::E
     }
 }
 
-// Анализ исходного текстового файла
+// РђРЅР°Р»РёР· РёСЃС…РѕРґРЅРѕРіРѕ С‚РµРєСЃС‚РѕРІРѕРіРѕ С„Р°Р№Р»Р°
 System::Void ParseLog::MyForm::res_Click(System::Object^ sender, System::EventArgs^ e)
 {
     String^ ex = existence->Text->ToString();
