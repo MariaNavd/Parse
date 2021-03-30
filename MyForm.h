@@ -1,4 +1,4 @@
-// Ãðàôè÷åñêèé èíòåðôåéñ
+// Ð“Ñ€Ð°Ñ„Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¸Ð½Ñ‚ÐµÑ€Ñ„ÐµÐ¹Ñ
 #pragma once
 
 namespace ParseLog {
@@ -59,7 +59,7 @@ namespace ParseLog {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Enter filter";
 
-			// filters - ïîëå äëÿ ââîäà ôèëüòðîâ
+			// filters - Ð¿Ð¾Ð»Ðµ Ð´Ð»Ñ Ð²Ð²Ð¾Ð´Ð° Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð¾Ð²
 			this->filters->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->filters->Location = System::Drawing::Point(65, 64);
@@ -77,8 +77,8 @@ namespace ParseLog {
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"String contains filters";
 
-			// existence - ïîëå, îïðåäåëÿþùåå, êàêèå ñòðîêè íóæíî âûâåñòè
-			// (ñîäåðæàùèå èëè íå ñîäåðæàùèå ôèëüòðû)
+			// existence - Ð¿Ð¾Ð»Ðµ, Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÑŽÑ‰ÐµÐµ, ÐºÐ°ÐºÐ¸Ðµ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð½ÑƒÐ¶Ð½Ð¾ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸
+			// (ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‰Ð¸Ðµ Ð¸Ð»Ð¸ Ð½Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‰Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ñ‹)
 			this->existence->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->existence->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
@@ -90,7 +90,7 @@ namespace ParseLog {
 			this->existence->TabIndex = 3;
 			this->existence->UseWaitCursor = true;
 
-			// addFilter - êíîïêà äîáàâëåíèÿ ôèëüòðà
+			// addFilter - ÐºÐ½Ð¾Ð¿ÐºÐ° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°
 			this->addFilter->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->addFilter->Location = System::Drawing::Point(65, 116);
@@ -101,7 +101,7 @@ namespace ParseLog {
 			this->addFilter->UseVisualStyleBackColor = true;
 			this->addFilter->Click += gcnew System::EventHandler(this, &MyForm::addFilter_Click);
 
-			// res - àíàëèç òåêñòîâîãî ôàéëà ïî ââåäåííûì äàííûì
+			// res - Ð°Ð½Ð°Ð»Ð¸Ð· Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð° Ð¿Ð¾ Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ð¼
 			this->res->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->res->Location = System::Drawing::Point(65, 314);
@@ -112,7 +112,7 @@ namespace ParseLog {
 			this->res->UseVisualStyleBackColor = true;
 			this->res->Click += gcnew System::EventHandler(this, &MyForm::res_Click);
 
-			// filtList - ïîëå, îòîáðàæàþùåå âñå ôèëüòðû
+			// filtList - Ð¿Ð¾Ð»Ðµ, Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°ÑŽÑ‰ÐµÐµ Ð²ÑÐµ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ñ‹
 			this->filtList->AutoSize = true;
 			this->filtList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
